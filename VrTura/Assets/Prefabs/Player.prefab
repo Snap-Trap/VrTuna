@@ -65,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: f61c9b345fb5bd84aa46e886d6bb40c6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -152,32 +152,73 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f392079efe01eff4b8ec060745c35655, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zMovement:
-    m_Name: Z Movement
+  forward:
+    m_Name: Forward
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: de6ed4f2-3f75-4f49-86d2-5403f25928ef
+    m_Id: 9dd3f868-1cb6-48c7-8a0a-33bdba38aff8
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings: []
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 861b40ce-bc9f-45d0-b55a-8749e8cbee30
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Forward
+      m_Flags: 0
     m_Flags: 0
-  xMovement:
-    m_Name: X Movement
+  backward:
+    m_Name: Backward
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 98d175a1-3877-4ef5-827e-aea636a5c5f0
+    m_Id: 2cac5ac2-12d8-47d5-aad0-922f94f89264
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings: []
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: fea6c01e-858a-4f3f-86d1-b62d8ae598e5
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Backward
+      m_Flags: 0
     m_Flags: 0
-  yMovement:
-    m_Name: Y Movement
+  left:
+    m_Name: Left
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: c0f61a3b-74f1-4bd5-9b92-c93731032466
+    m_Id: 50dc5701-1960-401a-9e99-50f9c95bb0c3
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings: []
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 652791fb-d905-4d39-9001-bce800e33cb0
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Left
+      m_Flags: 0
+    m_Flags: 0
+  right:
+    m_Name: Right
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 78d9a315-d5c6-495d-8ec4-8d30035ec8b4
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 9f84883f-00bd-40a6-8c56-3a521cc66fc5
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Right
+      m_Flags: 0
     m_Flags: 0
   speed: 5
 --- !u!54 &6612614789509632702
@@ -205,5 +246,5 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0

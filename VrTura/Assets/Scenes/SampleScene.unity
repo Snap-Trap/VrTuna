@@ -423,6 +423,38 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
+      propertyPath: left.m_Name
+      value: Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
+      propertyPath: right.m_Name
+      value: Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
+      propertyPath: forward.m_Name
+      value: Forward
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
+      propertyPath: backward.m_Name
+      value: Backward
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
+      propertyPath: left.m_SingletonActionBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
+      propertyPath: right.m_SingletonActionBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
+      propertyPath: forward.m_SingletonActionBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
+      propertyPath: backward.m_SingletonActionBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
       propertyPath: xMovement.m_SingletonActionBindings.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -433,6 +465,42 @@ PrefabInstance:
     - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
       propertyPath: zMovement.m_SingletonActionBindings.Array.size
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
+      propertyPath: left.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 652791fb-d905-4d39-9001-bce800e33cb0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
+      propertyPath: right.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 9f84883f-00bd-40a6-8c56-3a521cc66fc5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
+      propertyPath: left.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/a
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
+      propertyPath: forward.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 861b40ce-bc9f-45d0-b55a-8749e8cbee30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
+      propertyPath: right.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/d
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
+      propertyPath: backward.m_SingletonActionBindings.Array.data[0].m_Id
+      value: fea6c01e-858a-4f3f-86d1-b62d8ae598e5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
+      propertyPath: left.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
+      propertyPath: forward.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/w
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
+      propertyPath: right.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Right
       objectReference: {fileID: 0}
     - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
       propertyPath: xMovement.m_SingletonActionBindings.Array.data[0].m_Id
@@ -461,6 +529,14 @@ PrefabInstance:
     - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
       propertyPath: zMovement.m_SingletonActionBindings.Array.data[1].m_Id
       value: 8ada191e-0eb0-4c3e-b954-6a2706894bf8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
+      propertyPath: backward.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/s
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
+      propertyPath: forward.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Forward
       objectReference: {fileID: 0}
     - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
       propertyPath: xMovement.m_SingletonActionBindings.Array.data[0].m_Name
@@ -493,6 +569,10 @@ PrefabInstance:
     - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
       propertyPath: zMovement.m_SingletonActionBindings.Array.data[1].m_Path
       value: <Keyboard>/s
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
+      propertyPath: backward.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Backward
       objectReference: {fileID: 0}
     - target: {fileID: 6425024404134427450, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
       propertyPath: xMovement.m_SingletonActionBindings.Array.data[0].m_Flags
@@ -541,6 +621,10 @@ PrefabInstance:
     - target: {fileID: 6539773329331309635, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
       propertyPath: m_Name
       value: Capsule
+      objectReference: {fileID: 0}
+    - target: {fileID: 6612614789509632702, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
+      propertyPath: m_Constraints
+      value: 112
       objectReference: {fileID: 0}
     - target: {fileID: 7420159856631956419, guid: 1c60651156bfad847b54d3bbac185007, type: 3}
       propertyPath: m_LocalPosition.x

@@ -5,9 +5,10 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public InputAction zMovement;
-    public InputAction xMovement;
-    public InputAction yMovement;
+    public InputAction forward;
+    public InputAction backward;
+    public InputAction left;
+    public InputAction right;
 
     public float speed = 5f;
 
@@ -20,23 +21,41 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        Vector3 move = new Vector3(xMovement.ReadValue<float>(), yMovement.ReadValue<float>(), zMovement.ReadValue<float>());
-        rb.velocity = move * speed;
+        Vector3 move = new Vector3(0, 0, 0);
 
+        if (forward.ReadValue<float>() > 0)
+        {
+            move += transform.forward;
+        }
+        if (backward.ReadValue<float>() > 0)
+        {
+            move -= transform.forward;
+        }
+        if (left.ReadValue<float>() > 0)
+        {
+            move -= transform.right;
+        }
+        if (right.ReadValue<float>() > 0)
+        {
+            move += transform.right;
+        }
 
+        rb.velocity = move.normalized * speed;
     }
 
     private void OnEnable()
     {
-        zMovement.Enable();
-        xMovement.Enable();
-        yMovement.Enable();
+        forward.Enable();
+        backward.Enable();
+        left.Enable();
+        right.Enable();
     }
 
     private void OnDisable()
     {
-        zMovement.Disable();
-        xMovement.Disable();
-        yMovement.Disable();
+        forward.Disable();
+        backward.Disable();
+        left.Disable();
+        right.Disable();  
     }
 }
