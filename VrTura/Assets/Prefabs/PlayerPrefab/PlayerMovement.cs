@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -14,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody rb;
 
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -21,6 +23,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        // basic movement shit
+
+
         Vector3 move = new Vector3(0, 0, 0);
 
         if (forward.ReadValue<float>() > 0)
